@@ -152,7 +152,6 @@
          function handleClick() {
                const firstTicket = document.getElementById('first-class').value;
                const economy = document.getElementById('economy').value;
-               const totalTicketInfo = firstTicket + economy;
                const subTotal = document.getElementById('sub-total').innerText;
                const totalCharge = document.getElementById('charge').innerText;
                const totalPrice = document.getElementById('total-price').innerText;
@@ -161,7 +160,6 @@
                alert(   ` All Information
                         first class ticket : ${firstTicket}
                         Economy Ticket : ${economy}
-                        Total Ticket : ${totalTicketInfo}
                         Sub-Total : ${subTotal}
                         Charge 10% VAT : ${totalCharge}
                         Total Cost : ${totalPrice}`
