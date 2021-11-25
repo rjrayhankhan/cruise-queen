@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button onclick="handleClick()" class="btn-style">Book Now</button>
         </div>
     </main>
     <script> 
@@ -147,6 +147,25 @@
                const inputTicketNumber = document.getElementById(ticketValue);
                const ticketCount = parseInt(inputTicketNumber.value);
                return ticketCount;
+         }
+
+         function handleClick() {
+               const firstTicket = document.getElementById('first-class').value;
+               const economy = document.getElementById('economy').value;
+               const totalTicketInfo = firstTicket + economy;
+               const subTotal = document.getElementById('sub-total').innerText;
+               const totalCharge = document.getElementById('charge').innerText;
+               const totalPrice = document.getElementById('total-price').innerText;
+               
+
+               alert(   ` All Information
+                        first class ticket : ${firstTicket}
+                        Economy Ticket : ${economy}
+                        Total Ticket : ${totalTicketInfo}
+                        Sub-Total : ${subTotal}
+                        Charge 10% VAT : ${totalCharge}
+                        Total Cost : ${totalPrice}`
+                );
          }
 
          
